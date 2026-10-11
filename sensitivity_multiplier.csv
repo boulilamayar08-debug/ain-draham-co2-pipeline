@@ -1,0 +1,7 @@
+scenario,multiplier,stock_t1_tCO2e,stock_t2_tCO2e,net_change_tCO2e
+ipcc_values,0.8,1387040,1396586,9546
+ipcc_values,1.0,1733800,1745733,11933
+ipcc_values,1.2,2080560,2094880,14319
+gedi_calibrated,0.931,1614405,1625516,11111
+gedi_calibrated,1.164,2018006,2031895,13889
+gedi_calibrated,1.397,2421607,2438274,16666

@@ -1,0 +1,49 @@
+ELEVATION: {'elevation_max': 1014, 'elevation_mean': 536.8907149961008, 'elevation_min': 90}
+
+SHARE_AT_OR_ABOVE_800M_PERCENT: 5.8
+
+LAND_COVER_PERCENT:
+tree     72.4
+grass    20.0
+shrub     4.2
+built     1.7
+water     0.9
+crop      0.8
+bare      0.1
+
+PIPELINE_MEAN_AGB_2020: 53.4982697895214
+
+GEDI_MEAN_AGB: 62.26774520873622
+
+CALIBRATION_MULTIPLIER: 1.163920729655681
+
+summary.csv:
+                     metric         unit  ipcc_values  gedi_calibrated
+                 valid area           ha      18771.1          18771.1
+              CO2e stock t1       t CO2e    1733800.4        2018006.2
+              CO2e stock t2       t CO2e    1745732.9        2031894.8
+            net CO2e change       t CO2e      11932.5          13888.5
+           annual CO2e rate    t CO2e/yr       2386.5           2777.7
+         change per hectare    t CO2e/ha          0.6              0.7
+change per hectare per year t CO2e/ha/yr          0.1              0.1
+
+sensitivity_multiplier.csv:
+       scenario  multiplier  stock_t1_tCO2e  stock_t2_tCO2e  net_change_tCO2e
+    ipcc_values       0.800         1387040         1396586              9546
+    ipcc_values       1.000         1733800         1745733             11933
+    ipcc_values       1.200         2080560         2094880             14319
+gedi_calibrated       0.931         1614405         1625516             11111
+gedi_calibrated       1.164         2018006         2031895             13889
+gedi_calibrated       1.397         2421607         2438274             16666
+
+sensitivity_ndvi_modifier.csv:
+ ndvi_modifier_amplitude  net_change_tCO2e
+                     0.1              6944
+                     0.2             13889
+                     0.3             20833
+
+sensitivity_forest_zone.csv:
+         tree_zone_choice  mean_AGB_2020_t_ha  stock_t1_tCO2e  net_change_tCO2e
+      all_dry_forest_65.2                55.3         1791498             12222
+elevation_split_65.2_35.1                53.5         1733800             11933
+         all_montane_35.1                30.9         1000919              7288
